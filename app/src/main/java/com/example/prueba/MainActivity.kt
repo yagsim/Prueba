@@ -39,6 +39,7 @@ class MainActivity : AppCompatActivity() {
     override fun onPause() {
         super.onPause()
 
+
        tiempo2=System.currentTimeMillis()
         tiempoF=tiempo2-tiempo1
         segundos= (tiempoF/ 1000.0)
@@ -57,7 +58,8 @@ class MainActivity : AppCompatActivity() {
     override fun onRestart() {
         super.onRestart()
         val mensaje2 : TextView=findViewById(R.id.textView)
-        mensaje2.setText("la aplicacion estuvo " + segundos + " antes de cerrarse")
+        val segActivos : String=getString(R.string.app)
+        mensaje2.setText("$segActivos  $segundos  antes de cerrarse")
         Log.d("Estado pausado","$segundos")
         Log.d("Estado restart","se reinicio")
 

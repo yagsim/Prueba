@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">APPLICATION</string>
+    <string name="saludo">Hello mundo</string>
+    <string name="boton">My button</string>
+    <string name="app">the aplicattion was $segundos before close</string>
+</resources>
