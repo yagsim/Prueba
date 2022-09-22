@@ -4,18 +4,33 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:animateLayoutChanges="false"
+    android:animationCache="false"
+    android:background="@color/purple_200"
+    android:visibility="visible"
+    tools:context=".MainActivity"
+    tools:visibility="visible">
 
     <TextView
+        android:id="@+id/textView"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
-        android:text="Hello World!"
+        android:layout_marginTop="30dp"
+        android:backgroundTint="#9C27B0"
+        android:text="@string/saludo"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.604"
+        app:layout_constraintHorizontal_bias="0.498"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.264" />
+        app:layout_constraintVertical_bias="0.355" />
 
+    <Button
+        android:id="@+id/boton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/boton"
+        tools:ignore="MissingConstraints"
+        tools:layout_editor_absoluteX="117dp"
+        tools:layout_editor_absoluteY="536dp" />
 </androidx.constraintlayout.widget.ConstraintLayout>
